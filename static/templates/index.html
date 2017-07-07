@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Cheerio
+{% endblock %}
+
+{% block css %}<link rel = "stylesheet" href={{ url_for('static', filename = 'styles.1.css') }}>{% endblock %}
+    
+{% block body %}
+
+    <div id="name">
+        Cheerio Guo
+    </div>
+    <div id="birthday">
+        Birthday: December 18, 2014
+    </div>
+    
+    <br>
+        
+    <img id="middle" alt= "Cheeriopic" src= "static/cheeriopic.jpg"/>
+        
+    <br>
+    
+    <ul>
+        <li><a href = "{{ url_for('favorite') }}" >Favorite Things About Cheerio</a></li>
+        <li><a href = "{{ url_for('nature') }}"> Fun Times</a></li>
+    </ul>
+    
+    <p>
+        Golden Retrievers are the best dogs to have in your life! They are loyal, kind, and a friend to all. Cheerio has been an amazing asset to my life and he is the best dog I could ever ask for. Do yourself a favor and bring home one of these wonderful life companions! You won't regret it.
+    </p>
+    
+    <p>For information on how to adopt a Golden, 
+        <a href= "http://www.adoptapet.com/s/adopt-a-golden-retriever">click here.</a>
+    </p>
+    
+    New to dogs? Have no fear!
+    <a href= "http://www.humanesociety.org/animals/dogs/tips/bringing_new_dog_home.html?credit=ad_gg_search_pettips_011416&gclid=Cj0KEQjw4cLKBRCZmNTvyovvj-4BEiQAl_sgQkWhGVWgsVzmHz5uktuDAZX-UvSLnYwTpIQa_P5UALwaAsa28P8HAQ?referrer=https://www.google.com/">Click here</a>
+    to learn more about how to care for your furry friend!
+    
+    <hr>
+    
+    <address>
+    Written by Lucy Guo
+    </address>
+    
+ {% endblock %}

@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Fun Times
+{% endblock %}
+
+{% block css %}<link rel = "stylesheet" href={{ url_for('static', filename = 'nature.1.css') }}>{% endblock %}
+    
+{% block body %}
+ 
+    <div class="gallery">
+        <img src="static/cheerionature.jpg" alt="Cheerio in Nature">
+      <div class="desc">Cheerio loves the outdoors and comes on many trips with my family. Fun fact- He loves snow but hates rain!</div>
+    </div>
+    
+    <div class="gallery">
+        <img src="static/cheeriopumpkin.JPG" alt="Fall">
+      <div class="desc">Cheerio's coat blends in with the beautiful colors of fall. Warning: It is quite easy to lose him during the autumn months.</div>
+    </div>
+    
+    <div class="gallery">
+        <img src="static/cheerioleaves.jpg" alt="Leaves">
+      <div class="desc">Cheerio is very patient and open to new adventures. He loved this pile of leaves and stayed still the entire time my friend and I piled leaves around him.</div>
+    </div>
+    
+{% endblock %}

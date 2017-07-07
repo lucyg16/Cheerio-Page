@@ -1,0 +1,22 @@
+div.gallery {
+    border: 1px solid #ccc;
+    width: 400px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    text-align: center;
+    font-size: 16px;
+}
+body 
+{
+    background-color: #B9F6CA;
+}

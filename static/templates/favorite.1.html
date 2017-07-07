@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Favorites
+{% endblock %}
+
+{% block css %}<link rel = "stylesheet" href={{ url_for('static', filename = 'favorite.1.css') }}>{% endblock %}
+        
+{% block body %}
+
+    <h1> My favorite things about Cheerio</h1>
+        <ul>
+            <li>He always tries to sit on my lap even though he is too big to fit.</li>
+            <li>He only barks when strangers are at the door, not anyone in my family.</li>
+            <li>He is always there to greet me when I come home, whether it's an unenthusiastic glance up from his nap or a full on slobber attack.</li>
+        </ul>
+        
+{% endblock %}
